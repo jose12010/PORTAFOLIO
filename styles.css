@@ -48,7 +48,7 @@ a{
     position: fixed;
 } 
 
-.navbar_movile {
+.navbar_mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -259,5 +259,32 @@ a{
         display: flex;
         flex-direction: column;
     }
+
+}
+
+@media (min-width: 1000px) {
+    .navbar_desktop{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: end;
+        gap: 1em;
+        background-color: white;
+        padding-top: 1em;
+    }
+    .img_home_desktop{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: url(./assets/Imágenes/Vector.png);
+    }
+
+    .navbar_mobile{
+        display: none;
+    }
+    .img_home_mobile{
+        display: none;
+    }
+
 
 }
