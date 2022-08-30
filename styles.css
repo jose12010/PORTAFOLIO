@@ -151,7 +151,7 @@ a{
     flex-direction: column;
     padding: 1em;
     align-items: center;
-   gap: 1em;
+    gap: 1em;
 }
 
 .skills img{
@@ -161,9 +161,12 @@ a{
 
 .skills .info_skills {
     display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center; 
     gap: 1em;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -171,22 +174,24 @@ a{
     text-align: center;
 }
 
-.title_u_design{
+.title_u_design, .title_w_design{
     display: flex;
     justify-content: space-evenly;
    padding: 0 3em;
 }
 
-.title_p_design{
+.title_p_design, .title_i_design{
     display: flex;
     justify-content: space-evenly;
    padding: 0 2em;
 }
 
-.u_design, .p_design{
+.u_design, .p_design, .i_design , .w_design{
     background-color: #f9f6ff;
     border-radius: 1em;
     padding: 1em;
+    height: 200px;
+    width: 250px;
     
 }
 
