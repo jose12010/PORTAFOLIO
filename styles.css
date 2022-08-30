@@ -8,8 +8,11 @@
 }
 :root{
     --fzT: 20px;
-    --fzST: 18px
+    --fzST: 18px;
     --fzB: 16px;
+    --fzTD: 50px;
+    --fzSTD: 28px;
+    --fzBD: 26px;
     --fwT: 600;
     --fwB: 400;
 }
@@ -268,6 +271,14 @@ a{
 }
 
 @media (min-width: 1000px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    
+    /* NAVBAR */
     .navbar_desktop{
         width: 100%;
         height: 3em;
@@ -290,6 +301,44 @@ a{
     .img_home_mobile{
         display: none;
     }
+   
+    /* HOME */
+    .home{
+        padding-top: 3em;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
 
+    .text_home{
+        gap: 3em;
+    }
+
+    .title_home{
+        font-size: var(--fzTD);
+        font-weight: var(--fwT);
+    }
+
+    .info_home, .contact_home{
+        font-size: var(--fzBD);
+    }
+    
+    /* ABOUT */
+
+    .text_about{
+        display: flex;
+        align-self: center;
+        width: 70%;
+    }
+
+    /* EXPERIENCE */
+
+    .experience .info_experience{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
 
 }
