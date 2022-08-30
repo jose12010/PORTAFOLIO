@@ -164,7 +164,7 @@ a{
     gap: 1em;
     justify-content: space-between;
     align-items: center;
-   
+    
 }
 
 .title_skills{
@@ -190,10 +190,74 @@ a{
     
 }
 
+/* EXPERIENCE */
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.experience .title_experience{
+    text-align: center;
+}
+
+.experience .info_experience{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.experience .info_experience .amazon_years, .air_years, .google_years{
+    text-align: end;
+    padding: 1em;
+}
+/* PORTFOLIO */
+
+.portfolio img{
+    height: 250px;
+    width: 250px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* .portfolio .title_portfolio{
+    text-align: center;
+} */
+
+.portfolio .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 0.5em;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.phone img, .mail img{
+    background-color: #f9f6ff;
+    border: 1em solid #f9f6ff;
+    border-radius: 100%;
+}
+
 @media (max-width: 400px) {
     
     .info_skills{
         display: flex;
         flex-direction: column;
     }
+
 }
