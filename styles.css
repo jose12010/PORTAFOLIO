@@ -17,11 +17,15 @@
     --fwB: 400;
 }
 
+body{
+
+    background-color: #f9f6ff;
+}
 
 .main{
     min-width: 250px;
     min-height: 650px;
-    background-color: white;
+    background-color: #f9f6ff;
 }
 /* NAVBAR */
 .navbar_desktop{
@@ -49,7 +53,7 @@ a{
 
 .posfix{
     position: fixed;
-} 
+}
 
 .navbar_mobile {
     display: flex;
@@ -190,7 +194,7 @@ a{
 }
 
 .u_design, .p_design, .i_design , .w_design{
-    background-color: #f9f6ff;
+    background-color: #F9F5F2;
     border-radius: 1em;
     padding: 1em;
     height: 200px;
@@ -293,6 +297,7 @@ a{
         justify-content: center;
         align-content: center;
         background-image: url(./assets/Imágenes/Vector.png);
+        
     }
 
     .navbar_mobile{
@@ -312,7 +317,7 @@ a{
     }
 
     .text_home{
-        gap: 3em;
+        justify-content: space-evenly;
     }
 
     .title_home{
