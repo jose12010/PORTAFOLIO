@@ -19,11 +19,7 @@
 
 body{
 
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
+    background-color: #f9f6ff;
 }
 
 .main{
@@ -156,7 +152,7 @@ a{
     padding: 1em;
     gap: 1em;
 }
-/* SKILLS */
+
 .skills{
     display: flex;
     flex-direction: column;
@@ -249,8 +245,9 @@ a{
 
 .portfolio .images{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     gap: 0.5em;
+
 }
 
 .contact{
@@ -283,7 +280,6 @@ a{
         display: flex;
         flex-direction: column;
         gap: 3em;
-        width: 100%;
     }
     
     /* NAVBAR */
@@ -291,7 +287,7 @@ a{
         width: 100%;
         height: 3em;
         display: flex;
-        /* justify-content: end; */
+        justify-content: end;
         gap: 1em;
         background-color: white;
         padding-top: 1em;
