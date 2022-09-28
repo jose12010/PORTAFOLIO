@@ -95,20 +95,25 @@ a{
 .text_home{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     gap: 1em;
     height: inherit;
     padding: 1em;
+    max-width: 1050px;
+    
 }
 
 .title_home{
     font-size: var(--fzT);
     font-weight: var(--fwT);
+    overflow-wrap: break-word;
 }
 
 .info_home{
     font-size: var(--fzB);
     font-weight: var(--fwB);
+    
 }
 .icons_home{
     display: flex;
@@ -169,16 +174,17 @@ a{
 .skills .info_skills {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    max-width: 1200px;
+    align-self: center;
     width: 100%;
-    align-items: center; 
-    gap: 1em;
+    gap: 3em;
     flex-wrap: wrap;
     
 }
 
 .title_skills{
     text-align: center;
+    
 }
 
 .title_u_design, .title_w_design{
@@ -190,45 +196,25 @@ a{
 .title_p_design, .title_i_design{
     display: flex;
     justify-content: space-evenly;
-   padding: 0 2em;
+    padding: 0 2em;
+    
 }
 
 .u_design, .p_design, .i_design , .w_design{
     background-color: #F9F5F2;
     border-radius: 1em;
     padding: 1em;
-    height: 200px;
     width: 250px;
-    
+    border: solid rgb(255, 0, 0,0.1);
+    box-shadow: 0 0 10px;
 }
 
-/* EXPERIENCE */
-
-.experience{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-}
-
-.experience .title_experience{
-    text-align: center;
-}
-
-.experience .info_experience{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-
-.experience .info_experience .amazon_years, .air_years, .google_years{
-    text-align: end;
-    padding: 1em;
-}
 /* PORTFOLIO */
 
 .portfolio img{
     height: 250px;
     width: 250px;
+    box-shadow: 0 0 10px;
 }
 
 .portfolio {
@@ -237,17 +223,22 @@ a{
     gap: 1em;
     padding: 1em;
     text-align: center;
+    
 }
 
-/* .portfolio .title_portfolio{
-    text-align: center;
-} */
-
-.portfolio .images{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 0.5em;
-
+.portfolio > *{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    
+}
+.portfolio > * > .content{
+    max-width: 1200px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .contact{
@@ -340,13 +331,8 @@ a{
         width: 70%;
     }
 
-    /* EXPERIENCE */
+    /* PORTFOLIO */
 
-    .experience .info_experience{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    
+ 
 
 }
