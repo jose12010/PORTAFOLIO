@@ -201,6 +201,9 @@ a{
 }
 
 .u_design, .p_design, .i_design , .w_design{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     background-color: #F9F5F2;
     border-radius: 1em;
     padding: 1em;
@@ -262,14 +265,7 @@ a{
     gap: 2em;
 }
 
-@media (max-width: 400px) {
-    
-    .info_skills{
-        display: flex;
-        flex-direction: column;
-    }
 
-}
 
 @media (min-width: 1000px) {
 
