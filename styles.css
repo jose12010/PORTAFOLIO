@@ -256,6 +256,12 @@ a{
     border-radius: 100%;
 }
 
+.weather_app , .ecommerce{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 @media (max-width: 400px) {
     
     .info_skills{
